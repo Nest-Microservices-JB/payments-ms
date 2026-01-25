@@ -14,3 +14,6 @@ https://dashboard.stripe.com/acct_1StVT2H4RF4RZHjH/test/dashboard
 Agregamos la secret key a variables de entorno
 instalamos el paquete ene l proyecto npm install stripe --save // yarn add stripe --save
 Agregamos stripe al servicio
+
+Crear session de pago
+Creamos un pago de prueba, retornardo la url de pago aceptado y visualizamos la transaaccione en stripe
