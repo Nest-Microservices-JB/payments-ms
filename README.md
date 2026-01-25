@@ -17,3 +17,8 @@ Agregamos stripe al servicio
 
 Crear session de pago
 Creamos un pago de prueba, retornardo la url de pago aceptado y visualizamos la transaaccione en stripe
+
+Creamos el DTO payment session
+# creamos el dto, e instlamos clas-transformer y class-validator : npm i class-transformer class-validator / yarn add class-transformer class-validator 
+Configuramos global pipes en main
+Modificamos el servicio para utilizar nuestro dto para el pago
