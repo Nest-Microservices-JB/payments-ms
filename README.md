@@ -22,3 +22,20 @@ Creamos el DTO payment session
 # creamos el dto, e instlamos clas-transformer y class-validator : npm i class-transformer class-validator / yarn add class-transformer class-validator 
 Configuramos global pipes en main
 Modificamos el servicio para utilizar nuestro dto para el pago
+
+Probamos webhook de stripe
+Seguimos la documentacion de stripe para hacer login
+https://docs.stripe.com/stripe-cli/install?install-method=windows
+No suatenticamos
+stripe login
+hacemos pruebas del webhook
+https://docs.stripe.com/stripe-cli/use-cli
+stripe listen --forward-to localhost:3003/payments/webhook
+ejecutamos el proceso y lo dejamos en consola
+Desde otra consola Con stripe trigger checkout --help vemos todos los eventos disponibles
+probamos payment_intent.succeeded
+stripe trigger payment_intent.succeeded
+Con esto logramos que stripe invoque nuestro metodo
+
+Configuramos main para enviar el body como un buffer
+creamos un servicio stripeWebhook para ser invocado desde weebhook
