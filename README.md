@@ -42,3 +42,23 @@ creamos un servicio stripeWebhook para ser invocado desde weebhook
 
 implementar el webhook
 y hacemos pruebas
+
+
+agregamos una validacion al servicio webbook, para identificar el tipo de evento y ejecutar x Accion
+finalizamos la configuracion de webhook
+Configuramos un forwarder usando hookdeck
+creamos las configuraciones dentro del sitio
+al crear la coneccion nos retorna url para colocar en stripe (https://hkdk.events/854z3xuvvnir58)
+
+instalamos el CLI de hookdeck en la PC
+yarn global add hookdeck-cli
+hookdeck login
+hookdeck listen [PORT] stripe-to-localhost (donde PORT es el de la aplciacion en este caso 3003)
+
+luego de esto creamo un evento de escucha en stride
+nos retorna una secret key y la reemplazamos en el service
+
+una vez configurado porbamos, creamos una session
+abrimos link
+ahcemos el pago
+y chequeamos que se haya ejecuta el evento
