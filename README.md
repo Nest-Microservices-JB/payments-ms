@@ -39,3 +39,6 @@ Con esto logramos que stripe invoque nuestro metodo
 
 Configuramos main para enviar el body como un buffer
 creamos un servicio stripeWebhook para ser invocado desde weebhook
+
+implementar el webhook
+y hacemos pruebas
