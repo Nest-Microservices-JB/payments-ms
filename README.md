@@ -62,3 +62,8 @@ una vez configurado porbamos, creamos una session
 abrimos link
 ahcemos el pago
 y chequeamos que se haya ejecuta el evento
+https://dashboard.stripe.com/acct_1StVT2H4RF4RZHjH/test/workbench/overview
+
+enviar y recibir el id de la orden
+Agregamos el orderId para trasladarlo en la metadata de stripe
+hacemo una nueva session pay para probar
