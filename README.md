@@ -69,3 +69,9 @@ Agregamos el orderId para trasladarlo en la metadata de stripe
 hacemo una nueva session pay para probar
 
 Configuracion de variables de entorno
+
+instalamos @nestjs/microservices yarn add @nestjs/microservices 
+tambien instalamos nats yarn add nats
+
+configuramos nuestro main para levantar la parte de microservicios
+agregamos la conexion a nats
