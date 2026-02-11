@@ -3,6 +3,7 @@ import { envs } from 'src/config';
 import Stripe from 'stripe';
 import { PaymentSessionDto } from './dto/payment-session.dto';
 import { Request, Response } from 'express';
+import { url } from 'inspector';
 
 @Injectable()
 export class PaymentsService {
@@ -37,7 +38,12 @@ export class PaymentsService {
             cancel_url: envs.stripeCancelUrl,
         })
 
-        return session;
+        //return session;
+        return {
+            cancelUrl: session.cancel_url,
+            sessionUrl: session.success_url,
+            url: session.url
+        }
     }
 
     async stripeWebhook(req: Request, res: Response){
