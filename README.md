@@ -75,3 +75,5 @@ tambien instalamos nats yarn add nats
 
 configuramos nuestro main para levantar la parte de microservicios
 agregamos la conexion a nats
+
+Comentamos el post de create session para que solo quede la comunicacion nats, y comprobar que nuestro microservicios no hereda las validacion de nuestro class validator

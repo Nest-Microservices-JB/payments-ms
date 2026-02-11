@@ -23,7 +23,7 @@ async function bootstrap() {
     options: {
       servers: envs.natsServers,
     }
-  })
+  }, {inheritAppConfig: true});
 
   await app.startAllMicroservices(); //esto levanta todos los microserviciosque esten configurados, en este caso el de NATS
   await app.listen(envs.port);
